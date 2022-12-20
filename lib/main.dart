@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:widget_demo_dynamic/export_widget.dart';
 import 'package:widget_demo_dynamic/remote_page.dart';
 
-void main() {
+import 'home_page.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterDownloader.initialize();
   runApp(const MyApp());
 }
 
@@ -12,6 +17,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final platform = Theme.of(context).platform;
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -26,7 +32,11 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomePage(
+        title: 'Test',
+        platform: platform,
+      ),
     );
   }
 }

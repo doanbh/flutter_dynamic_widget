@@ -141,31 +141,31 @@ class _ExportWidgetState extends State<ExportWidget> {
                                       ],
                                     ),
                                   ),
-                                  // ContainerCustom(
-                                  //     width: 100,
-                                  //     height: 100,
-                                  //     // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                                  //     decoration: BoxDecorationCustom(
-                                  //         color: Color(0xFF494C5E),
-                                  //         shape: BoxShape.circle
-                                  //     ),
-                                  //     child: Stack(
-                                  //       children: [
-                                  //         Positioned.fill(
-                                  //           child: Center(
-                                  //             child: ContainerCustom(
-                                  //                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                                  //                 decoration: BoxDecorationCustom(
-                                  //                     border: Border.all(color: Colors.white),
-                                  //                     shape: BoxShape.circle
-                                  //                 ),
-                                  //                 child: Text('OK', style: TextStyle(color: Colors.white),)
-                                  //             ),
-                                  //           ),
-                                  //         ),
-                                  //       ],
-                                  //     )
-                                  // ),
+                                  ContainerCustom(
+                                      width: 100,
+                                      height: 100,
+                                      // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                                      decoration: BoxDecorationCustom(
+                                          color: Color(0xFF494C5E),
+                                          shape: BoxShape.circle
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned.fill(
+                                            child: Center(
+                                              child: ContainerCustom(
+                                                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                                                  decoration: BoxDecorationCustom(
+                                                      border: Border.all(color: Colors.white),
+                                                      shape: BoxShape.circle
+                                                  ),
+                                                  child: Text('OK', style: TextStyle(color: Colors.white),)
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                  ),
                                   ContainerCustom(
                                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                                     decoration: BoxDecorationCustom(
